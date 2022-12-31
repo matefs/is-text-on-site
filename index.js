@@ -55,7 +55,9 @@ const tempoParaAcharPalavra = 5000;
 
 const objetoTexto = { 
     FoiEncontrado: false,
-     numeroDeVezes: 0 
+    numeroDeVezes: 0,
+    urlDoSite: '',
+    texto: ''
 }
 
 
@@ -70,6 +72,8 @@ app.get('/api', function (req, res) {
 
     const palavraEscolhida = req.query.text || '';
     const siteEscolhido = req.query.site || '';
+    objetoTexto.texto = req.query.text || '';
+    objetoTexto.urlDoSite = req.query.site || '';
 
 if(palavraEscolhida != '' && siteEscolhido != '' && palavraEscolhida != ' ' && siteEscolhido != ' ' ){
 (async () => {
@@ -95,8 +99,10 @@ if(palavraEscolhida != '' && siteEscolhido != '' && palavraEscolhida != ' ' && s
     try {
         await page.waitForXPath(`//*[contains(text(),'${palavraEscolhida}')]`, {timeout: tempoParaAcharPalavra})
         const textoSelecionado = await page.$x(`//*[contains(text(),'${palavraEscolhida}')]`)  
+
         objetoTexto.numeroDeVezes = textoSelecionado.length;
         objetoTexto.FoiEncontrado = true;
+
         console.log('Texto encontrado !! ')
         console.table(objetoTexto)
         res.send(JSON.stringify(objetoTexto))
