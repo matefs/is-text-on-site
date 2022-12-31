@@ -7,3 +7,8 @@ A aplicação procura se o texto escolhido  está contido no site que você esco
 ![image](https://user-images.githubusercontent.com/30128774/210124544-403f711e-d261-4a0d-a53b-1a927952c0af.png)
 A aplicação retorna um JSON informando se o texto está contido no site e quantas vezes foi encontrado. 
 
+
+## Como rodar
+1. Baixe o projeto
+2. Instale `npm install ` ou  `yarn ` 
+3. Rode `npm run start`  ou `yarn start` 
