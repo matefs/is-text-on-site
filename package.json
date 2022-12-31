@@ -1,0 +1,23 @@
+{
+  "name": "is-text-on-site",
+  "version": "1.0.0",
+  "description": "Verifica se o texto existe no site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "text",
+    "site",
+    "text",
+    "on",
+    "site"
+  ],
+  "author": "Mateus Schverz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^19.4.1"
+  },
+  "type":"module"
+}
