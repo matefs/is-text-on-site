@@ -1,5 +1,5 @@
 # Is text on site ? 
-A aplicação procura se o texto escolhido  está contido no site que você escolheu. O projeto utiliza puppeteer para que o os frameworks renderizem o javascript na página e então busca o texto através do XPATH.
+A aplicação procura se o texto escolhido  está contido no site que você escolheu. O projeto utiliza puppeteer para que o os frameworks renderizem o javascript na página e então busca o texto através do XPATH
 
 ![is text on site](https://user-images.githubusercontent.com/30128774/210124629-d17440ec-5d21-4872-929e-b6dfe2f45499.gif)
 
