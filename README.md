@@ -12,3 +12,12 @@ A aplicação retorna um JSON informando se o texto está contido no site e quan
 1. Baixe o projeto
 2. Instale `npm install ` ou  `yarn ` 
 3. Rode `npm run start`  ou `yarn start` 
+
+## Sobre o código:
+Basicamente funciona em cima do comando: 
+```js
+var palavraEscolhida = "Seu texto"
+// $x(`//*[contains(text(),'${palavraEscolhida}')]`)  
+console.dir($x(`//*[contains(text(),'${palavraEscolhida}')]`))
+``` 
+ 
